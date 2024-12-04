@@ -70,6 +70,17 @@ export const convertNeoboardSlideToSvg = (doc: z.infer<typeof zWhiteboard>, slid
                 //     'stroke-width': strokeWidth,
                 // });
             }
+        } else if (element.type === 'path') {
+            if (element.kind === 'line') {
+                elements.ele('line', {
+                    x1: element.position.x + element.points[0].x,
+                    y1: element.position.y + element.points[0].y,
+                    x2: element.position.x + element.points[1].x,
+                    y2: element.position.y + element.points[1].y,
+                    stroke: element.strokeColor,
+                    'stroke-width': 2,
+                });
+            }
         }
     }
     return root.end({ prettyPrint: true });
