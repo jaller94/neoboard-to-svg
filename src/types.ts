@@ -52,7 +52,7 @@ export const zWhiteboard = z.object({
                     position: zPoint,
                     points: z.array(zPoint),
                     strokeColor: z.string(),
-                    textAlignment: z.enum(['arrow-head-line']).optional(),
+                    endMarker: z.enum(['arrow-head-line']).optional(),
                 }),
                 z.object({
                     type: z.literal('image'),
