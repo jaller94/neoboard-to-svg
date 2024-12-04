@@ -80,6 +80,14 @@ export const convertNeoboardSlideToSvg = (doc: z.infer<typeof zWhiteboard>, slid
                     stroke: element.strokeColor,
                     'stroke-width': 2,
                 });
+            } else if (element.kind === 'polyline') {
+                const points = element.points.map(point => `${element.position.x + point.x}, ${element.position.y + point.y}`).join(' ');
+                elements.ele('polyline', {
+                    points,
+                    fill: 'none',
+                    stroke: element.strokeColor,
+                    'stroke-width': 2,
+                });
             }
         }
     }

@@ -7,11 +7,10 @@ This script can partially convert [NeoBoard whiteboards](https://neoboard.io/) t
 Yes:
 - Rectangles
 - Circles and ellipses
-- Lines (except `endMarker`)
+- Lines and Polylines (except `endMarker`)
 
 No:
 - Text
-- polylines
 - Triangles
 - Images
 
