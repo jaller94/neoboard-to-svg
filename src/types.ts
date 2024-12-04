@@ -57,8 +57,8 @@ export const zWhiteboard = z.object({
                 z.object({
                     type: z.literal('image'),
                     mxc: z.string(),
-                    filename: z.string(),
-                    mimeType: z.enum(['image/gif', 'image/jpeg', 'image/png', 'image/svg+xml']),
+                    fileName: z.string(),
+                    mimeType: z.enum(['image/gif', 'image/jpeg', 'image/png', 'image/svg+xml']).optional(),
                     position: zPoint,
                     width: z.number().min(0),
                     height: z.number().min(0),
