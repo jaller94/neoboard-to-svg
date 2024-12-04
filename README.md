@@ -24,7 +24,7 @@ bun install
 To run:
 
 ```bash
-bun run src/index.ts
+bun run src/index.ts ./input.nwb ./output.png
 ```
 
 ## License
