@@ -3,6 +3,9 @@
   "author": "Nordeck IT + Consulting GmbH",
   "license": "Apache-2.0",
   "type": "module",
+  "scripts": {
+    "compile": "bun build --compile src/index-thumbnailer.ts --outfile neoboard-thumbnailer"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
