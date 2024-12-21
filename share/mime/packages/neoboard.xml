@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+  <mime-type type="application/neoboard+json">
+    <comment>NeoBoard whiteboard</comment>
+    <sub-class-of type="application/json"/>
+    <glob pattern="*.nwb"/>
+    <icon name="x-office-presentation"/>
+    <magic>
+      <match type="string" value='{"version":"net.nordeck.whiteboard@v1"' offset="0"/>
+    </magic>
+    <priority>75</priority>
+  </mime-type>
+</mime-info>

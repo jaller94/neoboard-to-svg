@@ -1,0 +1,7 @@
+[Thumbnailer Entry]
+Version=1.0
+Encoding=UTF-8
+Type=X-Thumbnailer
+Name=NeoBoard Thumbnailer
+Exec=/usr/bin/env sh -c "$HOME/.local/bin/neoboard-thumbnailer %i %o %s"
+MimeType=application/neoboard+json;
