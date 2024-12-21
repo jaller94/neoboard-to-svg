@@ -32,6 +32,10 @@ bun run src/index.ts ./input.nwb ./output.png
 
 Installing this will make your operating system show thumbnails for *.nwb files.
 
+Before you start, make sure to install these applications:
+* Bun JavaScript runtime
+* Inkscape
+
 ```bash
 # Install the dependencies
 bun install
